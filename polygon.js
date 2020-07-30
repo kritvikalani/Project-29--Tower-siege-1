@@ -3,8 +3,9 @@ class Polygon{
         var options= {
             isStatic: false,
             restitution: 0.5,
-            friction: 0.2,
-            density: 1
+            friction: 1.0,
+            stffness: 0.04,
+            density: 1.0
         }
     this.body= Bodies.circle(x,y,radius,options);
     this.body.radius= radius
