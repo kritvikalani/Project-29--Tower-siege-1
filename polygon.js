@@ -4,7 +4,7 @@ class Polygon{
             isStatic: false,
             restitution: 0.5,
             friction: 1.0,
-            stffness: 0.04,
+            stffness: 0.01,
             density: 1.0
         }
     this.body= Bodies.circle(x,y,radius,options);
@@ -19,4 +19,5 @@ class Polygon{
         imageMode(RADIUS)
         image(this.image,pos.x,pos.y,this.body.radius*2,this.body.radius*2)
     }
+
 }
